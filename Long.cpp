@@ -117,10 +117,10 @@ bool LongNum::OutFile(const char* filename)
 
 	
 	TextF.seekg(0, std::ios::end);
-	int SizeOfFile = TextF.tellg();
+	int File_size = TextF.tellg();
 	TextF.seekg(0, std::ios::beg);
 
-	char* string = new char[SizeOfFile + 1]();
+	char* string = new char[File_size + 1]();
 	TextF >> string;
 	TextF.close();
 
@@ -162,15 +162,15 @@ bool LongNum::OutBinFile(const char* filename)
 
 
 	inBinFile.seekg(0, std::ios::end);
-	int SizeOfFile = inBinFile.tellg();
+	int File_size = inBinFile.tellg();
 	inBinFile.seekg(0, std::ios::beg);
 
 	delete[] this->index;
-	this->index = new unsigned char[SizeOfFile];
-	this->size = SizeOfFile;
+	this->index = new unsigned char[File_size];
+	this->size = File_size;
 	this->sign = 0;
 
-	inBinFile.read((char*)this->index, SizeOfFile);
+	inBinFile.read((char*)this->index, File_size);
 	inBinFile.close();
 
 	return true;
