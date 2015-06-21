@@ -1,2 +1,2 @@
 all:
-	g++ TCHMK12.cpp -o TCHMK12 -lm
+	g++ TCHMK2.cpp longArifmetics.cpp -w -o t4mk-2
