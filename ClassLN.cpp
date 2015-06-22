@@ -1,5 +1,6 @@
 #include "ClassLN.h"
 
+
 void ClassLN::ReadText(const char* filename)
 {
     ClassLN res;
