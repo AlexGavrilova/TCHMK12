@@ -47,6 +47,7 @@ int main(int argc, const char * argv[])
             }
         }
     }
+    
     if (argc == 7)
     {
         if (strcmp(argv[6], "-b") == 0)
