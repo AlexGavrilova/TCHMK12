@@ -1,5 +1,6 @@
 #include "tchmk.h"
 
+
 LongNumber ReadNumber(unsigned long long int value)
 {
 	struct LongNumber num;
