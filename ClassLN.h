@@ -11,7 +11,6 @@ class ClassLN
         void ReadBin(const char* filename);
         void WriteBin(const char* filename);
         void ClearMemory();
-
         ClassLN& operator=(const ClassLN& rhv); 
         ClassLN operator+(ClassLN &right);
         ClassLN operator-(ClassLN &right);
