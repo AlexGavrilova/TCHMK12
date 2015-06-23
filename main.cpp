@@ -119,7 +119,7 @@ int main(int argc, const char * argv[])
             result = a - b;
             break;
         }
-        case 'x':
+        case '*':
         {
             result = a * b;
             break;
